@@ -28,7 +28,7 @@ def car_park(y):
     parking['licence_plate_no']=""
     parking['age']=""
     for s in y.split():
-        if(re.match('([A-Z]{2}-[0-9]{2}-[A-Z]{2}-[0-9]{4})$',s)):
+        if(re.match('^([A-Z]{2}-[0-9]{2}-[A-Z]{2}-[0-9]{4})$',s)):
             for cars in plot:                                                                                       #Function implemented for parking the car.  
                 if(cars==None):                                                                                     #Extract the licence plate number and check   
                     continue                                                                                        #If duplicate exsits, return null value
